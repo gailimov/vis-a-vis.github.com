@@ -7,7 +7,7 @@ layout: default
         <p><a href="http://twitter.com/gailimov" title="Я в twitter'е">@gailimov</a> &rarr; <span id="status"></span></p>
     </article>
     <article>
-        <h2>Последние посты с <a href="/blog">блога</a> &darr;</h2>
+        <h2>Последние посты с <a href="/blog/">блога</a> &darr;</h2>
         <ul class="posts">
         {% for post in site.posts limit:5 %}
             <li>{{ post.date | date: "%d.%m.%Y" }} &rsaquo; <a href="{{ post.url }}">{{ post.title }}</a></li>

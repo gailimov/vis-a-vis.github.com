@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: http://kanat.gailimov.kz/sitemap.xml

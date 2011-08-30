@@ -7,7 +7,7 @@ layout: default
         <h2>{{ page.title }}</h2>
         <div class="left">
         {% for tag in page.tags %}
-            <a href="/blog/tags.html#{{ tag }}" rel="tag" title="Посмотреть все посты с этим тегом">{{ tag }}</a>
+            <a href="/blog/tags/#{{ tag }}" rel="tag" title="Посмотреть все посты с этим тегом">{{ tag }}</a>
         {% endfor %}
         </div>
         <div class="right">{{ page.date | date: "%d.%m.%Y" }}</div>

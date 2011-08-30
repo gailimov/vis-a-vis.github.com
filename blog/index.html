@@ -9,7 +9,7 @@ title: Блог
         <h2>Теги &darr;</h2>
         <ul class="tag-cloud">
         {% for tag in site.tags %}
-            <li><a href="/blog/tags.html#{{ tag[0] }}" rel="tag" title="Посмотреть все посты ({{ tag.[1].size }}) с этим тегом">{{ tag[0] }}</a></li>
+            <li><a href="/blog/tags/#{{ tag[0] }}" rel="tag" title="Посмотреть все посты ({{ tag.[1].size }}) с этим тегом">{{ tag[0] }}</a></li>
         {% endfor %}
         </ul>
     </article>
@@ -20,6 +20,6 @@ title: Блог
             <li>{{ post.date | date: "%d.%m.%Y" }} &rsaquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
         {% endfor %}
         </ul>
-        <p><a href="/blog/archive">Архив</a></p>
+        <p><a href="/blog/archive/">Архив</a></p>
     </article>
 </section> <!-- .main -->
