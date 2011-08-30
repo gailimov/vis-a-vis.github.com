@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="{% if page.description != nil %}{{ page.description }}{% else %}Домашняя страница Каната Гайлимова{% endif %}" />
+        <link rel="stylesheet" href="/public/css/style.css" media="all" />
+        <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+        <link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Atom лента блога" />
+        <title>{% if page.title != nil %}{{ page.title }} :: {% endif %}Канат Гайлимов</title>
+    </head>
+    <body>
+        <a href="http://github.com/you">
+            <img src="https://a248.e.akamai.net/assets.github.com/img/71eeaab9d563c2b3c590319b398dd35683265e85/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" class="ribbon" alt="Fork me on GitHub">
+        </a>
+        <div class="wrapper">
+            <div class="header">
+                <header>
+                    <h1><a href="/" title="На главную">Канат Гайлимов</a></h1>
+                </header>
+                <nav>
+                    <ul>
+                        <li><a href="http://twitter.com/gailimov"><img src="/public/images/icons/twitter.png" alt="Twitter" title="Twitter" /></a></li>
+                        <li><a href="http://github.com/vis-a-vis"><img src="/public/images/icons/github.png" alt="Github" title="GitHub" /></a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/" title="Главная">/home</a></li>
+                        <li><a href="/blog" title="Блог">/home/blog</a> <sup><a href="/atom.xml" class="rss" title="Подписаться на обновления блога">rss</a></sup></li>
+                        <li><a href="/me.html" title="Обо мне">/home/me</a></li>
+                    </ul>
+                </nav>
+            </div> <!-- .header -->
+            <div class="clear"></div>
+            {{ content }}
+            <footer>
+                <div class="copyright">
+                    <p>
+                        <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+                            <img src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" alt="Creative Commons License" title="This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License" />
+                        </a>
+                        &copy; 2011
+                        <a href="mailto:gailimov@gmail.com" title="Написать мне">Канат Гайлимов</a>
+                    </p>
+                </div>
+                <div class="credits">
+                    <p>Работает на <a href="http://jekyllrb.com/">jekyll</a></p>
+                    <p><img src="/public/images/icons/HTML5_Logo_32.png" alt="HTML5" title="HTML5" /></p>
+                </div>
+            </footer>
+            <div class="clear"></div>
+        </div> <!-- .wrapper -->
+    </body>
+</html>

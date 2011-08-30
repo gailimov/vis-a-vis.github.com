@@ -1,0 +1,16 @@
+---
+layout: default
+description: Блог Каната Гайлимова о разработке и прочей фигне
+title: Архив
+---
+
+<section class="main">
+    <article>
+        <h2>Архив &darr;</h2>
+        <ul class="posts">
+        {% for post in site.posts %}
+            <li>{{ post.date | date: "%d.%m.%Y" }} &rsaquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+        </ul>
+    </article>
+</section> <!-- .main -->

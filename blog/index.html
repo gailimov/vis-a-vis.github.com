@@ -1,0 +1,25 @@
+---
+layout: default
+description: Блог Каната Гайлимова о разработке и прочей фигне
+title: Блог
+---
+
+<section class="main">
+    <article>
+        <h2>Теги &darr;</h2>
+        <ul class="tag-cloud">
+        {% for tag in site.tags %}
+            <li><a href="/blog/tags.html#{{ tag[0] }}" rel="tag" title="Посмотреть все посты ({{ tag.[1].size }}) с этим тегом">{{ tag[0] }}</a></li>
+        {% endfor %}
+        </ul>
+    </article>
+    <article>
+        <h2>Последние посты &darr;</h2>
+        <ul class="posts">
+        {% for post in site.posts limit:10 %}
+            <li>{{ post.date | date: "%d.%m.%Y" }} &rsaquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+        </ul>
+        <p><a href="/blog/archive">Архив</a></p>
+    </article>
+</section> <!-- .main -->

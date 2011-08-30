@@ -1,0 +1,142 @@
+/**
+ * Specification: HTML5, CSS3
+ */
+
+/** Reset */
+@import url('reset.css');
+
+/** Helpers */
+.clear {clear: both}
+
+.left {float: left}
+
+.right {float: right}
+
+.hidden {display: none}
+
+/** Common classes and IDs */
+.ribbon {
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+/** Typography */
+.rss {color: #B8860B}
+
+body {
+    font: 18px/26px Verdana, Tahoma, Arial, Helvetica;
+    color: #696969;
+    background: #fff
+}
+
+h1 {
+    font-size: 34px;
+    line-height: 42px
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 38px
+}
+
+h3 {
+    font-size: 26px;
+    line-height: 34px
+}
+
+h4 {
+    font-size: 22px;
+    line-height: 30px
+}
+
+h5 {
+    font-size: 20px;
+    line-height: 28px
+}
+
+h6 {
+    font-size: 18px;
+    line-height: 26px
+}
+
+p {margin: 15px 0}
+
+a {
+    text-decoration: underline;
+    color: #4682B4
+}
+
+    a:hover {
+        text-decoration: underline;
+        color: #696969
+    }
+
+sup {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em
+}
+
+blockquote, pre {
+    padding-left: 40px;
+    border-left: 1px solid #696969;
+}
+
+/** Main styles */
+.wrapper {
+    margin: 2% auto;
+    width: 960px
+}
+
+    .header {text-align: center}
+
+        .header header {
+            float: left;
+            width: 480px
+        }
+        
+        .header nav {
+            float: right;
+            width: 480px
+        }
+        
+            .header nav ul li {
+                display: inline;
+                margin: 0 5px
+            }
+                
+    .main {min-height: 400px}
+
+        .main header, .main article {margin: 40px}
+    
+        .main article h2 {margin-bottom: 25px}
+        
+        .main article ul:not(.posts):not(.tag-cloud) {
+            list-style-type: disc;
+            margin-left: 40px
+        }
+        
+        .main article ol {
+            list-style-type: decimal;
+            margin-left: 40px
+        }
+        
+        .main article ul.tag-cloud li {display: inline}
+        
+        .main article ul.posts li, .main article ul.tags li {margin: 5px 0}
+    
+    footer {
+        font-size: 16px;
+        text-align: center
+    }
+    
+        footer .copyright {
+            float: left;
+            width: 320px
+        }
+        
+        footer .credits {
+            float: right;
+            width: 320px
+        }
