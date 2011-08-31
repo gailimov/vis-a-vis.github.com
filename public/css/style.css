@@ -127,6 +127,8 @@ blockquote, pre {
         .main article ul.tag-cloud li {display: inline}
         
         .main article ul.posts li, .main article ul.tags li {margin: 5px 0}
+        
+    #comments {margin: 40px}
     
     footer {
         font-size: 16px;
